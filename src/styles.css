@@ -1,0 +1,69 @@
+:root {
+    --numColumns: 4;
+    --gridGap: 0vw;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--numColumns), 1fr);
+    row-gap: var(--gridGap);
+    column-gap: var(--gridGap);
+}
+
+.container > img{
+    width: 100%;
+}
+
+.draggable{
+    cursor: move;
+}
+
+#optionsBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.displayOptions{
+    text-align: center;
+}
+
+.columnOptions{
+    display: inline-block;
+    margin: 0;
+}
+
+.slider{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.searchGrid{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.modal{
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border-radius: 1vw;
+    text-align: center;
+    max-width: 60vw;
+}
+
+.modal::backdrop{
+    background: gray;
+    opacity: 0.4;
+}
+
+img {
+    width: 100%;
+}
